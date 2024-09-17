@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*
+  As with HTML files, it is a good idea in every CSS documant to define the
+  character set encoding used in the file.
+*/
+h1 {
+  font-size: 30px;
+  color: rebeccapurple;
+}
+
+.small-red {
+  color: red;
+  font-size: 12px;
+}
+
+.medium-green {
+  color: green;
+  font-size: 16px;
+}
+
+.big-blue {
+  color: blue;
+  font-size: 20px;
+}
+
+.box {
+  background-color: purple;
+  height: 160px;
+  width: 160px;
+  text-align: center;
+}
+
+.box p{
+  color: white;
+  line-height: 160px;
+}

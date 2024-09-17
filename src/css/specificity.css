@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+article p {
+  font-size: 20px;
+}
+
+/*
+  HTML reads CSS top to bottem.
+  The general rule in CSS is that the more specific selector takes precedence
+  over the more general selector
+  Closer to the element, stronger the rule (inline styles are bad practice)
+*/
+
+#one{
+  color: blue;
+}
+
+.one {
+  color: orange;
+}
+
+/* This rule is more specific, even though it comes before */
+
+article .two {
+  color: red;
+}
+
+.two {
+  color: orange;
+}
+
+/*
+  !important > inline > local > id > class > element
+  !important is useful when your are dealing with someone elses style
+  Avoid using !important
+*/
+
+.one {
+  color: blue !important;
+}
+
+
+
